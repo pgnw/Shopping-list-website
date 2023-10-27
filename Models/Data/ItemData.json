@@ -1,1 +1,260 @@
-﻿"{\"Granny Smith Apples\": {\r\n    \"weight\": \"1kg\",\r\n    \"price\": \"$5.50\"\r\n  },\r\n  \"Fresh tomatoes\": {\r\n    \"weight\": \"500g\",\r\n    \"price\": \"$5.90\"\r\n  },\r\n  \"Watermelon\": {\r\n    \"weight\": \"Whole\",\r\n    \"price\": \"$6.60\"\r\n  },\r\n  \"Cucumber\": {\r\n    \"quantity\": \"1 whole\",\r\n    \"price\": \"$1.90\"\r\n  },\r\n  \"Red potato washed\": {\r\n    \"weight\": \"1kg\",\r\n    \"price\": \"$4.00\"\r\n  },\r\n  \"Red tipped bananas\": {\r\n    \"weight\": \"1kg\",\r\n    \"price\": \"$4.90\"\r\n  },\r\n  \"Red onion\": {\r\n    \"weight\": \"1kg\",\r\n    \"price\": \"$3.50\"\r\n  },\r\n  \"Carrots\": {\r\n    \"weight\": \"1kg\",\r\n    \"price\": \"$2.00\"\r\n  },\r\n  \"Iceburg Lettuce\": {\r\n    \"quantity\": 1,\r\n    \"price\": \"$2.50\"\r\n  },\r\n  \"Helga's Wholemeal\": {\r\n    \"quantity\": 1,\r\n    \"price\": \"$3.70\"\r\n  },\r\n  \"Free range chicken\": {\r\n    \"weight\": \"1kg\",\r\n    \"price\": \"$7.50\"\r\n  },\r\n  \"Manning Valley 6-pk\": {\r\n    \"quantity\": \"6 eggs\",\r\n    \"price\": \"$3.60\"\r\n  },\r\n  \"A2 light milk\": {\r\n    \"volume\": \"1 litre\",\r\n    \"price\": \"$2.90\"\r\n  },\r\n  \"Chobani Strawberry Yoghurt\": {\r\n    \"quantity\": 1,\r\n    \"price\": \"$1.50\"\r\n  },\r\n  \"Lurpak Salted Blend\": {\r\n    \"weight\": \"250g\",\r\n    \"price\": \"$5.00\"\r\n  },\r\n  \"Bega Farmers Tasty\": {\r\n    \"weight\": \"250g\",\r\n    \"price\": \"$4.00\"\r\n  },\r\n  \"Babybel Mini\": {\r\n    \"weight\": \"100g\",\r\n    \"price\": \"$4.20\"\r\n  },\r\n  \"Cobram EVOO\": {\r\n    \"volume\": \"375ml\",\r\n    \"price\": \"$8.00\"\r\n  },\r\n  \"Heinz Tomato Soup\": {\r\n    \"weight\": \"535g\",\r\n    \"price\": \"$2.50\"\r\n  },\r\n  \"John West Tuna can\": {\r\n    \"weight\": \"95g\",\r\n    \"price\": \"$1.50\"\r\n  },\r\n  \"Cadbury Dairy Milk\": {\r\n    \"weight\": \"200g\",\r\n    \"price\": \"$5.00\"\r\n  },\r\n  \"Coca Cola\": {\r\n    \"volume\": \"2 litre\",\r\n    \"price\": \"$2.85\"\r\n  },\r\n  \"Smith's Original Share Pack Crisps\": {\r\n    \"weight\": \"170g\",\r\n    \"price\": \"$3.29\"\r\n  },\r\n  \"Birds Eye Fish Fingers\": {\r\n    \"weight\": \"375g\",\r\n    \"price\": \"$4.50\"\r\n  },\r\n  \"Berri Orange Juice\": {\r\n    \"volume\": \"2 litre\",\r\n    \"price\": \"$6.00\"\r\n  },\r\n  \"Vegemite\": {\r\n    \"weight\": \"380g\",\r\n    \"price\": \"$6.00\"\r\n  },\r\n  \"Cheddar Shapes\": {\r\n    \"weight\": \"175g\",\r\n    \"price\": \"$2.00\"\r\n  },\r\n  \"Colgate Total Toothpaste Original\": {\r\n    \"weight\": \"110g\",\r\n    \"price\": \"$3.50\"\r\n  },\r\n  \"Milo Chocolate Malt\": {\r\n    \"weight\": \"200g\",\r\n    \"price\": \"$4.00\"\r\n  },\r\n  \"Weet Bix Saniatarium Organic\": {\r\n    \"weight\": \"750g\",\r\n    \"price\": \"$5.33\"\r\n  },\r\n  \"Lindt Excellence 70% Cocoa Block\": {\r\n    \"weight\": \"100g\",\r\n    \"price\": \"$4.25\"\r\n  },\r\n  \"Original Tim Tams Choclate\": {\r\n    \"weight\": \"200g\",\r\n    \"price\": \"$3.65\"\r\n  },\r\n  \"Philadelphia Original Cream Cheese\": {\r\n    \"weight\": \"250g\",\r\n    \"price\": \"$4.30\"\r\n  },\r\n  \"Moccana Classic Instant Medium Roast\": {\r\n    \"weight\": \"100g\",\r\n    \"price\": \"$6.00\"\r\n  },\r\n  \"Capilano Squeezable Honey\": {\r\n    \"volume\": \"500g\",\r\n    \"price\": \"$7.35\"\r\n  },\r\n  \"Nutella jar\": {\r\n    \"weight\": \"400g\",\r\n    \"price\": \"$4.00\"\r\n  },\r\n  \"Arnott's Scotch Finger\": {\r\n    \"weight\": \"250g\",\r\n    \"price\": \"$2.85\"\r\n  },\r\n  \"South Cape Greek Feta\": {\r\n    \"weight\": \"200g\",\r\n    \"price\": \"$5.00\"\r\n  },\r\n  \"Sacla Pasta Tomato Basil Sauce\": {\r\n    \"weight\": \"420g\",\r\n    \"price\": \"$4.50\"\r\n  },\r\n  \"Primo English Ham\": {\r\n    \"weight\": \"100g\",\r\n    \"price\": \"$3.00\"\r\n  },\r\n  \"Primo Short cut rindless Bacon\": {\r\n    \"weight\": \"175g\",\r\n    \"price\": \"$5.00\"\r\n  },\r\n  \"Golden Circle Pineapple Pieces in natural juice\": {\r\n    \"weight\": \"440g\",\r\n    \"price\": \"$3.25\"\r\n  },\r\n  \"San Remo Linguine Pasta No 1\": {\r\n    \"weight\": \"500g\",\r\n    \"price\": \"$1.95\"\r\n  }\r\n}\r\n}"
+﻿[
+  {
+    "Id": 1,
+    "Name": "Granny Smith Apples",
+    "Unit": "1kg",
+    "Price": 5.50
+  },
+  {
+    "Id": 2,
+    "Name": "Fresh tomatoes",
+    "Unit": "500g",
+    "Price": 5.90
+  },
+  {
+    "Id": 3,
+    "Name": "Watermelon",
+    "Unit": "Whole",
+    "Price": 6.60
+  },
+  {
+    "Id": 4,
+    "Name": "Cucumber",
+    "Unit": "1 whole",
+    "Price": 1.90
+  },
+  {
+    "Id": 5,
+    "Name": "Red potato washed",
+    "Unit": "1kg",
+    "Price": 4.00
+  },
+  {
+    "Id": 6,
+    "Name": "Red tipped bananas",
+    "Unit": "1kg",
+    "Price": 4.90
+  },
+  {
+    "Id": 7,
+    "Name": "Red onion",
+    "Unit": "1kg",
+    "Price": 3.50
+  },
+  {
+    "Id": 8,
+    "Name": "Carrots",
+    "Unit": "1kg",
+    "Price": 2.00
+  },
+  {
+    "Id": 9,
+    "Name": "Iceburg Lettuce",
+    "Unit": "1",
+    "Price": 2.50
+  },
+  {
+    "Id": 10,
+    "Name": "Helga's Wholemeal",
+    "Unit": "1",
+    "Price": 3.70
+  },
+  {
+    "Id": 11,
+    "Name": "Free range chicken",
+    "Unit": "1kg",
+    "Price": 7.50
+  },
+  {
+    "Id": 12,
+    "Name": "Manning Valley 6-pk",
+    "Unit": "6 eggs",
+    "Price": 3.60
+  },
+  {
+    "Id": 13,
+    "Name": "A2 light milk",
+    "Unit": "1 litre",
+    "Price": 2.90
+  },
+  {
+    "Id": 14,
+    "Name": "Chobani Strawberry Yoghurt",
+    "Unit": "1",
+    "Price": 1.50
+  },
+  {
+    "Id": 15,
+    "Name": "Lurpak Salted Blend",
+    "Unit": "250g",
+    "Price": 5.00
+  },
+  {
+    "Id": 16,
+    "Name": "Bega Farmers Tasty",
+    "Unit": "250g",
+    "Price": 4.00
+  },
+  {
+    "Id": 17,
+    "Name": "Babybel Mini",
+    "Unit": "100g",
+    "Price": 4.20
+  },
+  {
+    "Id": 18,
+    "Name": "Cobram EVOO",
+    "Unit": "375ml",
+    "Price": 8.00
+  },
+  {
+    "Id": 19,
+    "Name": "Heinz Tomato Soup",
+    "Unit": "535g",
+    "Price": 2.50
+  },
+  {
+    "Id": 20,
+    "Name": "John West Tuna can",
+    "Unit": "95g",
+    "Price": 1.50
+  },
+  {
+    "Id": 21,
+    "Name": "Cadbury Dairy Milk",
+    "Unit": "200g",
+    "Price": 5.00
+  },
+  {
+    "Id": 22,
+    "Name": "Coca Cola",
+    "Unit": "2 litre",
+    "Price": 2.85
+  },
+  {
+    "Id": 23,
+    "Name": "Smith's Original Share Pack Crisps",
+    "Unit": "170g",
+    "Price": 3.29
+  },
+  {
+    "Id": 24,
+    "Name": "Birds Eye Fish Fingers",
+    "Unit": "375g",
+    "Price": 4.50
+  },
+  {
+    "Id": 25,
+    "Name": "Berri Orange Juice",
+    "Unit": "2 litre",
+    "Price": 6.00
+  },
+  {
+    "Id": 26,
+    "Name": "Vegemite",
+    "Unit": "380g",
+    "Price": 6.00
+  },
+  {
+    "Id": 27,
+    "Name": "Cheddar Shapes",
+    "Unit": "175g",
+    "Price": 2.00
+  },
+  {
+    "Id": 28,
+    "Name": "Colgate Total Toothpaste Original",
+    "Unit": "110g",
+    "Price": 3.50
+  },
+  {
+    "Id": 29,
+    "Name": "Milo Chocolate Malt",
+    "Unit": "200g",
+    "Price": 4.00
+  },
+  {
+    "Id": 30,
+    "Name": "Weet Bix Saniatarium Organic",
+    "Unit": "750g",
+    "Price": 5.33
+  },
+  {
+    "Id": 31,
+    "Name": "Lindt Excellence 70% Cocoa Block",
+    "Unit": "100g",
+    "Price": 4.25
+  },
+  {
+    "Id": 32,
+    "Name": "Original Tim Tams Choclate",
+    "Unit": "200g",
+    "Price": 3.65
+  },
+  {
+    "Id": 33,
+    "Name": "Philadelphia Original Cream Cheese",
+    "Unit": "250g",
+    "Price": 4.30
+  },
+  {
+    "Id": 34,
+    "Name": "Moccana Classic Instant Medium Roast",
+    "Unit": "100g",
+    "Price": 6.00
+  },
+  {
+    "Id": 35,
+    "Name": "Capilano Squeezable Honey",
+    "Unit": "500g",
+    "Price": 7.35
+  },
+  {
+    "Id": 36,
+    "Name": "Nutella jar",
+    "Unit": "400g",
+    "Price": 4.00
+  },
+  {
+    "Id": 37,
+    "Name": "Arnott's Scotch Finger",
+    "Unit": "250g",
+    "Price": 2.85
+  },
+  {
+    "Id": 38,
+    "Name": "South Cape Greek Feta",
+    "Unit": "200g",
+    "Price": 5.00
+  },
+  {
+    "Id": 39,
+    "Name": "Sacla Pasta Tomato Basil Sauce",
+    "Unit": "420g",
+    "Price": 3.00
+  },
+  {
+    "Id": 40,
+    "Name": "Primo English Ham",
+    "Unit": "100g",
+    "Price": 3.00
+  },
+  {
+    "Id": 41,
+    "Name": "Primo Short cut rindless Bacon",
+    "Unit": "175g",
+    "Price": 5.00
+  },
+  {
+    "Id": 42,
+    "Name": "Golden Circle Pineapple Pieces in natural juice",
+    "Unit": "440g",
+    "Price": 3.25
+  },
+  {
+    "Id": 43,
+    "Name": "San Remo Linguine Pasta No 1",
+    "Unit": "500g",
+    "Price": 1.95
+  }
+]

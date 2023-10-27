@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace Shopping_list_website.Models
 {
@@ -23,7 +24,17 @@ namespace Shopping_list_website.Models
             );
 
             string data = File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Models/Data/ItemData.json"));
-            Console.WriteLine(data ?? "no data");
+
+            JsonTextReader jsonReader = new JsonTextReader(new StringReader(data));
+            JsonSerializer serializer = new JsonSerializer();
+
+            Item[] itemData = serializer.Deserialize<Item[]>(jsonReader);
+            builder.Entity<Item>().HasData(itemData);
+
+
+
+
+
 
 
 

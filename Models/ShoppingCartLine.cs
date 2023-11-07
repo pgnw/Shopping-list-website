@@ -6,5 +6,7 @@
         public int ShoppingCartId { get; set; }
         public int ItemId { get; set; }
 
+        public virtual ShoppingCart ShoppingCart { get; set; }
+        public virtual Item Item { get; set; }
     }
 }

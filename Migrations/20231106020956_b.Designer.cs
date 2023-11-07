@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Shopping_list_website.Models;
 
@@ -11,9 +12,11 @@ using Shopping_list_website.Models;
 namespace Shopping_list_website.Migrations
 {
     [DbContext(typeof(ShoppingCartDbContext))]
-    partial class ShoppingCartDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231106020956_b")]
+    partial class b
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -37,9 +40,6 @@ namespace Shopping_list_website.Migrations
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("SelectedCart")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -410,7 +410,7 @@ namespace Shopping_list_website.Migrations
 
                     b.HasIndex("AccountId");
 
-                    b.ToTable("ShoppingCarts");
+                    b.ToTable("sSoppingCarts");
                 });
 
             modelBuilder.Entity("Shopping_list_website.Models.ShoppingCartLine", b =>
@@ -438,13 +438,13 @@ namespace Shopping_list_website.Migrations
 
             modelBuilder.Entity("Shopping_list_website.Models.ShoppingCart", b =>
                 {
-                    b.HasOne("Shopping_list_website.Models.Account", "Account")
+                    b.HasOne("Shopping_list_website.Models.Account", "account")
                         .WithMany("ShoppingCarts")
                         .HasForeignKey("AccountId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Account");
+                    b.Navigation("account");
                 });
 
             modelBuilder.Entity("Shopping_list_website.Models.ShoppingCartLine", b =>

@@ -7,15 +7,37 @@ namespace Shopping_list_website.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ShoppingCartDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ShoppingCartDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+
+            // Displays an error message to the user.
+            ViewBag.ErrorMessage = HttpContext.Session.GetString("ErrorMsg");
+            // Used to welcome the user by name.
+            ViewBag.Username = HttpContext.Session.GetString("Username");
+
+
+
+            Account? account = _context.Accounts.Find(HttpContext.Session.GetInt32("UserId"));
+
+            if (account != null)
+            {
+                // Get the users selected cart of the database and sent it to the view.
+                var selectedCart = _context.ShoppingCarts.Find(account.SelectedCart);
+
+
+                ViewData["SelectedCart"] = selectedCart;
+            }
+
+
+            return View(_context.Items);
         }
 
         public IActionResult Privacy()

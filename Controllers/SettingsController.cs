@@ -5,7 +5,7 @@ namespace Shopping_list_website.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SettingsController : ControllerBase
+    public class SettingsController : Controller
     {
 
         [HttpPost("SetTheme")]
@@ -16,13 +16,19 @@ namespace Shopping_list_website.Controllers
         }
 
 
-
-        /// <summary>
-        /// Used to extract the desired colour theme setting form our API calls
-        /// </summary>
-        public class ThemeSetting
+        public IActionResult Index()
         {
-            public string Theme { get; set; }
+            return View();
         }
     }
+
+
+    /// <summary>
+    /// Used to extract the desired colour theme setting form our API calls
+    /// </summary>
+    public class ThemeSetting
+    {
+        public string Theme { get; set; }
+    }
+
 }

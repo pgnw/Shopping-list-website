@@ -8,6 +8,6 @@
         public string Unit { get; set; }
         public decimal Price { get; set; }
 
-        public virtual ICollection<ShoppingCartLine> ShoppingCarts { get; set; }
+        public virtual ICollection<ShoppingCartLine> ShoppingCartLines { get; set; }
     }
 }

@@ -3,12 +3,67 @@
 
 // Write your JavaScript code.
 window.addEventListener('load', () => {
-
-    //Add an event listener to the component specified to manage click events
-    document.getElementById("btnTheme").addEventListener('click', () => {
-        switchTheme();
-    })
+    try {
+        //Add an event listener to the component specified to manage click events
+        document.getElementById("btnTheme").addEventListener('click', () => {
+            switchTheme();
+        })
+    }
+    catch {
+        console.log("tried to find btnTheme but could not")
+    }
+    
+    
 })
+function fixModalSubmitBtn(actionTarget, postFunction ) {
+    // Find the button on the modal.
+    let submitButton = document.querySelector(`form[action='${actionTarget}']`);
+
+
+    // Add an event listener to the button.
+    submitButton.addEventListener('submit', async (e) => {
+        // Prevent the button from carrying out it's regular function
+        e.preventDefault();
+
+        // Get the login information entered into the form.
+        let loginInformation = {
+            Email: e.target["Email"].value,
+            Password: e.target["Password"].value
+        };
+
+        //Retrieve the anti forgery token from the form. This is in a hidden input field
+        //called __RequestVerificationToken. This will be added to our fetch request headers later
+        //to passs the controllers Anti-Forgery-Token check.
+        //NOTE: This name has 2 underscores at the beginning.
+        let token = $("input[name='__RequestVerificationToken']").val();
+
+        let result = postFunction(token,loginInformation);
+
+        console.log(result);
+
+
+        //location.reload();
+    })
+}
+
+
+
+
+/*    fixModalSubmitBtn('/Login/Login', (token, formData) => {
+        let result = fetch("/Login/Login", {
+            method: "POST",
+            headers: {
+                "content-type": "application/json",
+                "RequestVerificationToken": token
+            },
+            body: JSON.stringify(formData)
+        });
+
+        return result;
+    })
+
+*/
+
 
 async function switchTheme() {
     //Get the current theme setting from the local storage(if it has been set) of your PC and store it.

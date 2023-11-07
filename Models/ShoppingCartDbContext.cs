@@ -11,10 +11,10 @@ namespace Shopping_list_website.Models
 
         }
 
-        public DbSet<Account> accounts { get; set; }
-        public DbSet<ShoppingCart> shoppingCarts { get; set; }
-        public DbSet<ShoppingCartLine> shoppingCartLines { get; set; }
-        public DbSet<Item> items { get; set; }
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<ShoppingCart> ShoppingCarts { get; set; }
+        public DbSet<ShoppingCartLine> ShoppingCartLines { get; set; }
+        public DbSet<Item> Items { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

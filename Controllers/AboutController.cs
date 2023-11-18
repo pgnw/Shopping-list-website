@@ -6,6 +6,7 @@ namespace Shopping_list_website.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["Title"] = "About";
             return View();
         }
     }

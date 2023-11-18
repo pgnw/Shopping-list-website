@@ -6,6 +6,8 @@ window.addEventListener('load', () => {
 
 
     try {
+        // Add event listeners to all the remove buttons on the page,
+        // and pass in the cart id to the function that will be called on the event.
         let deleteBtns = document.querySelectorAll('#cartDelete');
 
         deleteBtns.forEach((btn => btn.addEventListener('click', () => DeleteCart(btn.getAttribute('cartId')))));
@@ -16,16 +18,18 @@ window.addEventListener('load', () => {
     }
 
     try {
-        let deleteBtns = document.querySelectorAll('#cartSelect');
+        // Add event listeners to all the select buttons on the page,
+        // and pass in the cart id to the function that will be called on the event.
+        let selectBtns = document.querySelectorAll('#cartSelect');
 
-        deleteBtns.forEach((btn => btn.addEventListener('click', () => loadShoppingCartItems(btn.getAttribute('cartId')))));
+        selectBtns.forEach((btn => btn.addEventListener('click', () => loadShoppingCartItems(btn.getAttribute('cartId')))));
     }
     catch {
         console.log("error adding cart select event")
     }
 
 
-
+    // Add an event listener to the new shopping cart button so the user can make new carts.
     document.getElementById("btnListCreate").addEventListener('click', () => {
         NewShoppingList();
     });
@@ -35,29 +39,32 @@ window.addEventListener('load', () => {
 
 async function loadShoppingCartItems(cartId)
 {
+    //update the user's selected cart.
+    await fetch(`ShoppingCart/UpdateSelectedCart?cartId=${cartId}`, {
+        method: 'PUT',
+        headers: {
+            "content-type": "application/json"
+        }
+    });
 
+    // Make the url for the get cart contents request
     let URL = "/ShoppingCart/GetCartContents";
 
-    let fullURL = `${URL}?cartName=${cartId}`;
+    let fullURL = `${URL}?cartId=${cartId}`;
 
-    // Get the verification token so the ValidateAntiForgeryToken attribute in the controller doesn't stop the request
-    let token = $("input[name='__RequestVerificationToken']").val();
 
     // Tell the controller to create a new view containing all the items of the current cart.
-    let cartItems = await fetch(fullURL, {
-        method: 'POST',
-        headers: {
-            "content-type": "application/json",
-            "RequestVerificationToken": token
-        }
-
-    });
+    let cartItems = await fetch(fullURL)
 
     let cardHolder = document.getElementById("cardHolder");
 
     cardHolder.innerHTML = await cartItems.text();
 
-            
+    // Add the script which allows for item adding/removing in the modal.
+    let modelScript = document.createElement('script');
+    modelScript.src = "/js/ItemManager.js";
+    document.body.append(modelScript);
+                
 }
     
 async function NewShoppingList() {
@@ -69,15 +76,12 @@ async function NewShoppingList() {
         
     let fullURL = `${URL}?cartName=${listName}`;
 
-    // Get the verification token so the ValidateAntiForgeryToken attribute in the controller doesn't stop the request
-    let token = $("input[name='__RequestVerificationToken']").val();
 
     // Tell the controller to add the new cart.
     await fetch(fullURL, {
         method: 'POST',
         headers: {
-            "content-type": "application/json",
-            "RequestVerificationToken": token
+            "content-type": "application/json"
         }
 
     });
@@ -88,21 +92,16 @@ async function NewShoppingList() {
 
 async function DeleteCart(cartId) {
 
-    console.log('deletebutton clicked')
-
     let URL = "/ShoppingCart/DeleteShoppingCart";
 
     let fullURL = `${URL}?cartId=${cartId}`;
 
-    // Get the verification token so the ValidateAntiForgeryToken attribute in the controller doesn't stop the request
-    let token = $("input[name='__RequestVerificationToken']").val();
 
     // Tell the controller to add the new cart.
     await fetch(fullURL, {
-        method: 'POST',
+        method: 'DELETE',
         headers: {
-            "content-type": "application/json",
-            "RequestVerificationToken": token
+            "content-type": "application/json"
         }
 
     });

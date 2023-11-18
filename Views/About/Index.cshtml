@@ -1,51 +1,31 @@
 ﻿
-@{
-    Layout = null;
-}
+
 
 <!DOCTYPE html>
 
-<html>
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <meta name="viewport" content="width=device-width" />
-    <title>About</title>
 
-    <style>
-        .rectangle {
-            width: 300px;
-            height: 600px;
-            border: 2px solid #000;
-            padding: 20px;
-            box-sizing: border-box;
-        }
 
-    </style>
-</head>
-<body class="bg-colour-0">
-
-    <header style="margin-top:50px" >
-        <div class="d-flex justify-content-around">
-            <a class="nav-link p-2" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-            <div p-2 style="font-size:xx-large">About us</div>
-            <div p-2>
-                <img src="~/Sams Warehouse Shopping Cart.svg" alt="Shopping cart img" style="max-width: 150px"; />
-            </div>
+<header style="margin-top:50px" >
+    <div class="d-flex justify-content-around">
+        <a class="nav-link p-2" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        <div p-2 style="font-size:xx-large">About us</div>
+    <div p-2 class="spin-animation">
+        <img src="~/Sams Warehouse Shopping Cart.svg" alt="Shopping cart img" style="max-width: 150px"; />
         </div>
+    </div>
 
     
-    </header>
+</header>
 
-    <div class="position-absolute top-20 start-50 translate-middle">ABOUT US TEXT</div>
+<div style="margin-top:10em">
+    <iframe class="center-block" width="1668" height="723" src="https://www.youtube.com/embed/iUtnZpzkbG8" title="No Copyright Drone Shots | Royalty free drone shots | free stock videos | Drone footage nature shots" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<footer  style="margin-left:7%; margin-right:7%; font-size:x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum nunc sed erat cursus commodo. Nullam placerat fermentum nisi, eu sollicitudin augue bibendum ut. Phasellus mattis dolor sem, a venenatis elit tincidunt eget. In dolor dolor, convallis hendrerit purus a, maximus mollis magna. Pellentesque nec massa ornare, lobortis odio nec, viverra dui. Aenean scelerisque risus leo, at ullamcorper purus egestas ac. Pellentesque in lobortis nisl, ut elementum velit. Nam non mi libero. Suspendisse posuere magna in nibh accumsan, a pellentesque nibh lacinia. Suspendisse sed ornare eros. Cras tincidunt at erat pulvinar mollis. Nullam rhoncus ac mi a pellentesque. Quisque tincidunt sodales metus. Vivamus in finibus ex. Donec vel neque id augue posuere facilisis pulvinar ut diam. </footer>
 
 
-</body>
-</html>
+
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

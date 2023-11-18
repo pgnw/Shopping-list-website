@@ -36,3 +36,16 @@ body {
     display: flex;
     align-items: center;
 }
+
+.modal.right .modal-dialog {
+    position: fixed;
+    right: 0;
+    margin: auto;
+    min-width:30%;
+    height:100%;
+}
+
+.modal.right .modal-content {
+    height: 100%;
+    overflow-y:auto;
+}

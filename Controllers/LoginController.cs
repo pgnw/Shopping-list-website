@@ -23,6 +23,8 @@ namespace Shopping_list_website.Controllers
             if (login == null)
                 return BadRequest("null data");
 
+            // Remove the shopping carts value of the modal state as it is not needed, and it may cause the
+            // modelstate.isValid to return false.
             ModelState.Remove("ShoppingCarts");
 
             if (ModelState.IsValid)
@@ -34,12 +36,13 @@ namespace Shopping_list_website.Controllers
                     if (login.Email.Equals(user.Email))
                     {
                         // Verify that the password matches too
-                        if (login.Password.Equals(user.Password))
+                        if (BCrypt.Net.BCrypt.EnhancedVerify(login.Password, user.Password))
                         {
                             // Save the user's username and Id to the session.
                             HttpContext.Session.SetString("Username", login.Email);
                             HttpContext.Session.SetInt32("UserId", user.Id);
 
+                            // Clear the error message.
                             HttpContext.Session.SetString("ErrorMsg", "");
 
 

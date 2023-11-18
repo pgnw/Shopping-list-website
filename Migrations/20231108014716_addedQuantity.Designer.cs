@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Shopping_list_website.Models;
 
@@ -11,9 +12,11 @@ using Shopping_list_website.Models;
 namespace Shopping_list_website.Migrations
 {
     [DbContext(typeof(ShoppingCartDbContext))]
-    partial class ShoppingCartDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231108014716_addedQuantity")]
+    partial class addedQuantity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,15 +53,13 @@ namespace Shopping_list_website.Migrations
                         {
                             Id = 1,
                             Email = "a",
-                            Password = "$2a$11$OdiC1nM4pUhXCYkAnkHt6eS2HTuksjIyAwqTpzZVQeQilZQwbWz/2",
-                            SelectedCart = 1
+                            Password = "$2a$11$ABbq59Co.d9iEVFXWU83MeDxNC4Gh3UXIaT.59Yhu1B/WeqYPsxG6"
                         },
                         new
                         {
                             Id = 2,
                             Email = "websiteman@mail.com",
-                            Password = "$2a$11$5OcHRkuDdHQ67EnymgGaUeLKtEFiX9PQtuExFwhxFwWymCITRTO7K",
-                            SelectedCart = 2
+                            Password = "$2a$11$2Vwo/d3cm2TJ2WcBEHX8bu2E2TZ3DT3iL.0uv3CLB01EcQD9fI8EO"
                         });
                 });
 
@@ -413,22 +414,6 @@ namespace Shopping_list_website.Migrations
                     b.HasIndex("AccountId");
 
                     b.ToTable("ShoppingCarts");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            AccountId = 1,
-                            DateCreated = new DateTime(2023, 11, 10, 17, 41, 0, 462, DateTimeKind.Local).AddTicks(3403),
-                            Name = "Default"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            AccountId = 2,
-                            DateCreated = new DateTime(2023, 11, 10, 17, 41, 0, 462, DateTimeKind.Local).AddTicks(3415),
-                            Name = "Default"
-                        });
                 });
 
             modelBuilder.Entity("Shopping_list_website.Models.ShoppingCartLine", b =>

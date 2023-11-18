@@ -2,8 +2,6 @@
 // This Javascript file is used to manage user actions such as logging in and signing up.
 
 window.addEventListener('load', () => {
-   
-
     document.getElementById("btnLogin").addEventListener('click', () => { showLogin(); });
     document.getElementById("btnSignup").addEventListener('click', () => { showSignup(); });
 
@@ -16,7 +14,9 @@ async function showLogin() {
     let htmlResult = await page.text();
 
     // Add the html text to the modal
-    document.getElementById("mContent").innerHTML = htmlResult;
+    modalContent = document.getElementById("mContent");
+
+    modalContent.innerHTML = htmlResult;
 
     //Get the login form
     let form = document.querySelector("form[action='/Login/Login']");
@@ -54,7 +54,6 @@ async function showLogin() {
             },
             body: JSON.stringify(loginInformation)
         });
-
         if (result.status != 200) {
             alert("Login failed");
             return;
@@ -78,6 +77,7 @@ async function showSignup() {
 
     // Get the signup form
     let form = document.querySelector("form[action='/Signup/Signup']");
+    // Ensure that the data is validate.
     $.validator.unobtrusive.parse(form);
 
     form.addEventListener('submit', async (e) => {
